@@ -1,0 +1,1 @@
+This is a simple chrome extension that adds theatre mode for the F1TV player

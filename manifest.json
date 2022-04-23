@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "F1TV theatre mode",
+  "version": "1.1",
+  "description": "Increases videoplayer size without going fullscreen",
+  "icons": {
+    "48": "icons/bmp-48.png"
+  },
+  "browser_action": {
+    "default_title": "F1TV"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://f1tv.formula1.com/*"],
+      "js": ["F1TVTheatreMode.js"]
+    }
+  ],
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "chrome://favicon/"
+  ]
+}
